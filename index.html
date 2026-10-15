@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dᴇᴠᴀ-X-Dᴏᴡɴʟᴏᴀᴅᴇʀ </title>
+    <title>DEVA-X AI DOWNLOADER</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -578,6 +578,94 @@
 
         @keyframes spin {
             to { transform: rotate(360deg); }
+        }
+
+        /* Reference-inspired dark neon grid design */
+        body {
+            background-color: #07070c;
+            background-image:
+                linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px),
+                radial-gradient(ellipse at 12% 20%, rgba(255,45,35,.36), transparent 42%),
+                radial-gradient(ellipse at 90% 82%, rgba(132,35,255,.30), transparent 42%);
+            background-size: 46px 46px, 46px 46px, auto, auto;
+        }
+        .ambient-aura { opacity: .16; }
+        .rgb-border-wrapper {
+            max-width: 660px;
+            padding: 1px;
+            border-radius: 32px;
+            background: linear-gradient(135deg, rgba(255,30,85,.8), rgba(90,50,255,.65));
+            box-shadow: 0 0 32px rgba(255,0,90,.12), 0 0 55px rgba(110,40,255,.10);
+            animation: none;
+        }
+        .container {
+            background: rgba(5,6,11,.96);
+            border-radius: 31px;
+            padding: clamp(20px, 5vw, 34px);
+            gap: 22px;
+        }
+        .live-status-bar {
+            border-color: rgba(100,110,160,.3);
+            border-radius: 22px;
+            padding: 10px 15px;
+            color: #aab5d0;
+        }
+        .theme-toggle-btn { border-radius: 16px; min-height: 42px; }
+        .header h1 {
+            white-space: normal;
+            font-size: clamp(22px, 5vw, 31px);
+            background: linear-gradient(90deg, #ff1767, #b64dff, #2688ff);
+            background-size: 100% auto;
+            animation: none;
+            filter: none;
+        }
+        .header p { color: #9aa5bd; font-size: 13px; }
+        .marquee-wrapper { border-radius: 12px; }
+        .tabs { gap: 8px; }
+        .tab {
+            background: rgba(255,255,255,.035);
+            border-color: rgba(255,255,255,.08);
+            border-radius: 13px;
+            padding: 12px 4px;
+        }
+        .tab.active { background: linear-gradient(135deg,#ff1767,#773bff); }
+        .input-group input {
+            min-height: 52px;
+            border: 1px solid rgba(255,30,100,.72);
+            border-radius: 17px;
+            box-shadow: 0 0 18px rgba(255,0,100,.12);
+            font-size: 14px;
+        }
+        .input-group button.action-search-btn {
+            height: 52px;
+            min-width: 58px;
+            border-radius: 16px;
+            color: white;
+            background: linear-gradient(135deg,#ff1767,#326dff);
+            box-shadow: 0 0 18px rgba(255,0,100,.2);
+        }
+        .clear-btn { height: 52px; border-radius: 15px; }
+        .result-box, .preview-container {
+            background: rgba(0,0,0,.42);
+            border-color: rgba(255,255,255,.09);
+            border-radius: 20px;
+        }
+        .btn { padding: 9px 12px; font-size: 12px; border-radius: 10px; }
+        .owner-footer { border-color: rgba(255,255,255,.09); }
+        .whatsapp-btn {
+            background: linear-gradient(110deg,#20d875,#0fae9c);
+            border-radius: 30px;
+            font-size: 13px;
+        }
+        @media (max-width: 480px) {
+            body { padding: 12px; }
+            .container { padding: 18px 14px; gap: 18px; }
+            .live-status-bar { gap: 9px; padding: 9px 10px; }
+            .status-item { gap: 4px; }
+            .theme-toggle-btn { padding: 8px 10px; }
+            .result-box { align-items: flex-start; gap: 10px; padding: 11px; }
+            .result-box img { width: 88px; height: 74px; }
         }
     </style>
 </head>

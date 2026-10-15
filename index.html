@@ -667,6 +667,65 @@
             .result-box { align-items: flex-start; gap: 10px; padding: 11px; }
             .result-box img { width: 88px; height: 74px; }
         }
+
+        /* DEVA X premium polish */
+        body { background: #050611; }
+        .ambient-aura {
+            background: linear-gradient(135deg, #ff1767, #742dff, #087dff);
+            opacity: .24;
+        }
+        .rgb-border-wrapper {
+            max-width: 720px;
+            background: linear-gradient(115deg, #ff1680, #663bff, #00baff, #8a2bff, #ff1680);
+            background-size: 300% 300%;
+            box-shadow: 0 0 28px rgba(255, 0, 130, .16), 0 0 52px rgba(52, 83, 255, .13);
+        }
+        .container { gap: 22px; }
+        .top-bar { gap: 12px; }
+        .live-status-bar { background: rgba(4, 7, 20, .72); }
+        .theme-toggle-btn { background: rgba(4, 7, 20, .72); }
+        .header { padding: 7px 0 2px; }
+        .header h1 {
+            display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline;
+            column-gap: 9px; row-gap: 0; white-space: normal; line-height: 1.04;
+            font-size: clamp(30px, 7vw, 49px); letter-spacing: -1.5px;
+            background: none; -webkit-text-fill-color: initial; filter: none;
+            animation: none; margin-bottom: 12px;
+        }
+        .brand-deva { color: #f8faff; text-shadow: 0 0 18px rgba(89, 143, 255, .24); }
+        .brand-x { color: #ed35ff; background: linear-gradient(135deg,#ff1680,#873cff,#168bff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .brand-downloader { flex-basis: 100%; font-size: .72em; letter-spacing: 1px; color: #e6eaff; }
+        .header p { font-size: 14px; letter-spacing: .35px; color: #a8b7dc; }
+        .marquee-wrapper { border-radius: 30px; border-color: rgba(150, 94, 255, .5); background: rgba(5, 8, 25, .7); }
+        .tabs { gap: 10px; }
+        .tab { border-radius: 15px; padding: 13px 5px; background: rgba(9, 14, 34, .78); border-color: rgba(104, 132, 210, .23); }
+        .tab.active { box-shadow: 0 0 22px rgba(230, 28, 170, .25); }
+        .input-group { gap: 9px; }
+        .input-group input { background: rgba(2, 5, 17, .82); }
+        .result-box { box-shadow: inset 0 0 24px rgba(36, 72, 160, .06); }
+        .video-info h4 { color: #c4a1ff; }
+        .owner-footer { padding-top: 20px; }
+        .whatsapp-btn { box-shadow: 0 0 22px rgba(13, 220, 135, .19); }
+        @media (max-width: 480px) {
+            body { padding: 10px; }
+            .rgb-border-wrapper { border-radius: 28px; }
+            .container { border-radius: 25px; padding: 17px 13px; gap: 17px; }
+            .top-bar { align-items: stretch; }
+            .live-status-bar { flex: 1; min-width: 0; flex-wrap: wrap; gap: 7px; font-size: 10px; }
+            .theme-toggle-btn { padding: 8px 9px; font-size: 11px; }
+            .header h1 { font-size: clamp(27px, 8vw, 36px); }
+            .header p { font-size: 12px; }
+            .tabs { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+            .tab { font-size: 10px; padding: 11px 2px; }
+            .input-group { gap: 6px; }
+            .input-group input { padding: 12px 10px; font-size: 12px; }
+            .input-group button.action-search-btn { min-width: 48px; padding: 0 13px; }
+            .clear-btn { padding: 0 10px; }
+            .result-box { flex-direction: column; }
+            .result-box img { width: 100%; height: 150px; }
+            .video-info { width: 100%; }
+            .whatsapp-btn { white-space: normal; justify-content: center; padding: 12px 16px; }
+        }
     </style>
 </head>
 <body data-theme="luxury">
@@ -695,8 +754,8 @@
             </div>
 
             <div class="header">
-                <h1>Dᴇᴠᴀ X Dᴏᴡɴʟᴏᴀᴅᴇʀ</h1>
-                <p>✨ Ultimate Multi-API Media Suite ✨</p>
+                <h1><span class="brand-deva">DEVA</span> <span class="brand-x">X</span><span class="brand-downloader">DOWNLOADER</span></h1>
+                <p>Fast · Simple · Your Media Hub</p>
                 <!-- Floating Marquee -->
                 <div class="marquee-wrapper">
                     <div class="marquee-content">
